@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>SMART HOME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	
+	
+</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"> <strong>HOME AUTOMATION</strong></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">HALL</a></li>
+							<li><a href="BATHROOM1.html">BATHROOM1</a></li>
+							
+						</ul>
+						<ul class="actions vertical">
+							<li><a href="#" class="button special fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/HALL.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>BEDROOM2 AUTOMATION</h1>
+							</header>
+							
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							
+								<div class="inner">
+								
+									
+	<style>
+.w3-banner-top{
+    background: url(Light-Abstract-Background-Pictures.jpg) no-repeat 0px 0px;
+    background-size: 200%;
+	
+	    position: relative;
+}
+.btn {
+  border: 2px solid black;
+  background-color: #666699;
+
+
+
+  color: black;
+  padding: 2px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+ 
+  color: #003300;
+
+}
+
+.success:hover {
+  background-color: #003300;
+
+  color: black;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: black;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+ 
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.h4{
+	color:red;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+<div class=" w3-right-addres-1">
+				<div class="container">
+       <form action="" method="get">
+	   <div class="col-75">
+        <input type="text" id="ip" name="apikey" class = "ip" placeholder="Your API Key....">
+      </div>
+			</div>
+			</div>
+			  
+
+			  	  
+
+<h3>LIGHT1</h3>
+<button type="button" id="D1-on" class="btn success" ><strong>ON</strong</button>
+			  <button type="button" id="D1-off" class="btn danger" ><strong> OFF</strong></button>
+			 
+			  
+
+<h3>LIGHT2</h3>
+
+			  <button type="button" id="D2-on" class="btn success" ><strong>ON</strong></button>
+			  <button type="button" id="D2-off" class="btn danger" ><strong>OFF</strong></button>
+
+
+
+<h3>TV</h3>
+
+			  <button type="button" id="D3-on" class="btn success" ><strong> ON</strong></button>
+			  <button type="button" id="D3-off" class="btn danger" ><strong> OFF</strong></button>
+
+<h3>FAN1</h3>
+
+			  <button type="button" id="D4-on" class="btn success" ><strong> ON</strong></button>
+			  <button type="button" id="D4-off" class="btn danger" ><strong> OFF</strong></button>
+
+<h3>BALOCNY LIGHT</h3>
+
+			  <button type="button" id="D5-on" class="btn success" ><strong> ON</strong></button>
+			  <button type="button" id="D5-off" class="btn danger" ><strong> OFF</strong></button>
+<h3>BED LAMP</h3>
+
+			  <button type="button" id="D6-on" class="btn success" ><strong> ON</strong></button>
+			  <button type="button" id="D6-off" class="btn danger" ><strong> OFF</strong></button>
+
+<h3>CHARGER POINT</h3>
+
+			  <button type="button" id="D7-on" class="btn success" ><strong> ON</strong></button>
+			   <button type="button" id="D7-off" class="btn danger" ><strong> OFF</strong></button>
+
+<h3>STUDY LAMP</h3>
+
+			  <button type="button" id="D8-on" class="btn success" ><strong> ON</strong></button>
+			  <button type="button" id="D8-off" class="btn danger" ><strong> OFF</strong></button>
+										</div>
+								
+			</div>						
+								
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+						<script>
+		document.getElementById('D1-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D1-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		
+		document.getElementById('D2-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field2=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D2-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field2=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		
+		document.getElementById('D3-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field3=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D3-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field3=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		document.getElementById('D4-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field4=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D4-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field4=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+ document.getElementById('D5-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field5=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D5-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field5=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		document.getElementById('D6-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field6=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D6-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field6=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+					
+				});
+		});
+		document.getElementById('D7-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field7=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D7-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field7=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		document.getElementById('D8-on').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field8=1"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+		document.getElementById('D8-off').addEventListener('click', function() {
+				var ip = document.getElementById('ip').value;
+				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field8=0"
+				$.getJSON(url, function(data) {
+					console.log(data);
+				});
+		});
+		
+	</script>			
+									
+									
+						
+											
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								
+							
+							
+				
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			  
+
+	</body>
+</html>
